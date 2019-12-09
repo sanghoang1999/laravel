@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+
+
+	<script defer>
+    window.onload = function() {
+      var app = document.createElement('div');
+      app.setAttribute('id','app');
+      document.getElementsByTagName('body')[0].appendChild(app);
+      setTimeout(()=> {
+        var chat = document.createElement('script');
+        chat.src="/build.js";
+        chat.setAttribute('defer','defer');
+        document.getElementsByTagName('body')[0].appendChild(chat);
+      },300)
+    }
+    </script> 
+</body>
+</html>
